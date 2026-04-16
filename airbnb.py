@@ -186,7 +186,7 @@ rf = RandomForestRegressor()
 rf.fit(x_train,y_train)
 y_pred = rf.predict(x_test)
 r2_rf = metrics.r2_score(y_test, y_pred)
-print(r2_rf)
+print(r2_rf) # I AM GETTING ACCURACY OF 76%
 
 """# **CATBOOST REGRESSOR**
 
@@ -215,7 +215,7 @@ r2_cbr   = metrics.r2_score(y_test, y_pred_cbr)
 print('\nMean Absolute Error of CatBoost Regressor     : ', mae_cbr)
 print('\nMean Squarred Error of CatBoost Regressor     : ', mse_cbr)
 print('\nRoot Mean Squarred Error of CatBoost Regressor: ', rmse_cbr)
-print('\nR2 Score of CatBoost Regressor                : ', r2_cbr)
+print('\nR2 Score of CatBoost Regressor                : ', r2_cbr) # I AM GETTING ACCURACY OF 78%
 
 """# **GRADIENT BOOSTING REGRESSOR**
 
@@ -232,7 +232,7 @@ mae_gb  = metrics.mean_absolute_error(y_test, y_pred_gb)
 mse_gb  = metrics.mean_squared_error(y_test, y_pred_gb)
 rmse_gb = np.sqrt(metrics.mean_squared_error(y_test, y_pred_gb))
 r2_gb   = metrics.r2_score(y_test, y_pred_gb)
-print(r2_gb)
+print(r2_gb) # I AM GETTING ACCURACY OF 74%
 
 """# **ALGORITHM ACCURACY COMPARISON**"""
 
